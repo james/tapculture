@@ -12,6 +12,9 @@ class IndexController < ApplicationController
   def student
   end
   
+  def teacher
+  end
+  
   def leaderboard
   end
 end
