@@ -41,6 +41,7 @@ h1 {
 .content img {
     width: 800px;
 }
+
 .content.invite {
 	font-size: 22px;
 	margin-top: 120px;
@@ -81,4 +82,26 @@ h1 {
 #places li a {
 	color: #0072bc;
 	font-weight: bold;
+}
+
+p.big {
+    font-size: 2em;
+}
+
+a.big {
+    background-image:url('/images/button_bg.jpg');
+    width: 260px;
+    height: 85px;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: none;    
+    float: left;
+    margin: 10px;
+    padding: 80px 0 0 0;
+    overflow: hidden;
+}
+a.big span {
+    color: black;
+    background: white;
+    padding: 5px 10px 5px 10px;
 }
