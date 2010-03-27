@@ -1,0 +1,6 @@
+config/database.yml
+log/*.log
+tmp/**/*
+public/uploads/
+.DS_Store
+tmp/restart.txt
