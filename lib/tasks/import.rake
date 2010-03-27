@@ -20,4 +20,16 @@ task :importgovt => :environment do
     end
     c.save!
   end
+end 
+
+desc "find lat/long for each location"
+task :geolocate => :environment do
+  Venue.all.each do |venue|
+    unless venue.post_code.blank?
+      b=Geokit::Geocoders::YahooGeocoder.geocode "#{venue.post_code}, GB" 
+      venue.lat = b.lat
+      venue.lng = b.lng
+      venue.save!
+    end
+  end
 end
