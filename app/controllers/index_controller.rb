@@ -2,9 +2,6 @@ class IndexController < ApplicationController
   def index
   end
 
-  def invite
-  end
-  
   def register
   end
   

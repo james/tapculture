@@ -34,6 +34,11 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :venues
   map.root :controller => "index"
 
+  map.register "/register", :controller => "index", :action => "register"
+  map.places "/places", :controller => "index", :action => "places"
+  map.student "/student", :controller => "index", :action => "student"
+  map.leaderboard "/leaderboard", :controller => "index", :action => "leaderboard"
+
   # See how all your routes lay out with "rake routes"
 
   # Install the default routes as the lowest priority.
