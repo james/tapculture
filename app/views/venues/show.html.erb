@@ -1,0 +1,10 @@
+<h1><%= @venue.name %></h1>
+
+<p>
+  <% [1,2,3,4].each do |i| %>
+    <%= @venue.attributes["address_#{i}"] %><br />
+  <% end %>
+  <%= @venue.city %><br />
+  <%= @venue.county %><br />
+  <%= @venue.post_code %>
+</p>
