@@ -37,3 +37,7 @@ h1 {
     text-align: center;
     margin: 30px 10px 10px 10px;
 }
+
+.content img {
+    width: 800px;
+}
