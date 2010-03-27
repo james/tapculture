@@ -21,7 +21,7 @@ if defined? Geokit
 	# This is your yahoo application key for the Yahoo Geocoder.
 	# See http://developer.yahoo.com/faq/index.html#appid
 	# and http://developer.yahoo.com/maps/rest/V1/geocode.html
-	Geokit::Geocoders::yahoo = 'REPLACE_WITH_YOUR_YAHOO_KEY'
+	Geokit::Geocoders::yahoo = 'Cz9fNsPV34FMl5BD0ci91jLxjatXia5u9SrsGxlGTmxD_LyLrpxHwzxByQNYqq5tfmpm'
     
 	# This is your Google Maps geocoder key. 
 	# See http://www.google.com/apis/maps/signup.html
