@@ -1,0 +1,25 @@
+body {
+    * {margin:0;padding:0;} 
+}
+
+h1 {
+    font-size: 2em;
+}
+
+#doc {
+    border: 4px solid #ddd;
+}
+
+#hd {
+    margin: 10px 0 20px 0;
+}
+
+#bd {
+    padding: 30px 10px 30px 10px;
+    font-size: 1.2em;
+}
+
+#ft {
+    text-align: center;
+    margin: 30px 10px 10px 10px;
+}
