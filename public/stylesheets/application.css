@@ -19,6 +19,8 @@ h1 {
     font-size: 2em;
 }
 
+p { margin-bottom: 10px; }
+
 #doc4 {
     position: relative;
 }
@@ -82,6 +84,14 @@ h1 {
 #places li a {
 	color: #0072bc;
 	font-weight: bold;
+	display: block;
+}
+#places li a.fb {
+	color: #666;
+	display: inline;
+	font-weight: normal;
+	padding: 5px 20px;
+	background: url('../images/fb.png') no-repeat 0px 5px;
 }
 
 p.big {

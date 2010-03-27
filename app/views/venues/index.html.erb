@@ -11,6 +11,7 @@
 	});
 </script>
 <div style="font-size: 20px; margin-bottom: 20px;">
+	<p><a href="/student">&laquo; Back to profile</a></p>
 	<p>You're at <strong>Guardian High</strong> at N1 9AG</p>
 	<form action="" method="get">
 		Show places near: <input type="text" name="location" style="padding: 5px 10px;" value="<%= params[:location] %>" size="30" />
@@ -21,7 +22,7 @@
 <div style="float: left; width: 50%">
 	<ul id="places">
 	  <% @venues.each do |venue| %>
-	    <li><%= link_to venue.name, venue_path(venue) %><br /><%= venue.address_1 %> <%= venue.post_code %> - <a href="#">Make Facebook event</a></li>
+	    <li><%= link_to venue.name, venue_path(venue) %><br /><%= venue.address_1 %> <%= venue.post_code %> - <a href="#" class="fb">Create event</a></li>
 	  <% end %>  
 	</ul>
 </div>
