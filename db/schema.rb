@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100327131858) do
+ActiveRecord::Schema.define(:version => 20100327133039) do
 
   create_table "venues", :force => true do |t|
     t.string   "name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20100327131858) do
     t.string   "post_code"
     t.string   "country"
     t.string   "website"
-    t.string   "consitution"
+    t.string   "constitution"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
