@@ -1,5 +1,6 @@
 class IndexController < ApplicationController
   def index
+    redirect_to :action => 'register'
   end
 
   def register
@@ -9,6 +10,9 @@ class IndexController < ApplicationController
   end
   
   def student
+  end
+  
+  def teacher
   end
   
   def leaderboard

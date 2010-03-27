@@ -10,6 +10,13 @@
 		<% end %>
 	});
 </script>
+<div style="font-size: 20px; margin-bottom: 20px;">
+	<form action="" method="get">
+		Show places near: <input type="text" name="location" style="padding: 5px 10px;" value="<%= params[:location] %>" size="30" />
+		<input type="submit" value="Go" />
+	</form>
+</div>
+	
 <div style="float: left; width: 50%">
 	<ul>
 	  <% @venues.each do |venue| %>
