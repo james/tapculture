@@ -38,6 +38,7 @@ ActionController::Routing::Routes.draw do |map|
   map.places "/places", :controller => "index", :action => "places"
   map.student "/student", :controller => "index", :action => "student"
   map.leaderboard "/leaderboard", :controller => "index", :action => "leaderboard"
+  map.leaderboard "/teacher", :controller => "index", :action => "teacher"
 
   # See how all your routes lay out with "rake routes"
 
