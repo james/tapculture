@@ -1,21 +1,35 @@
 body {
-    * {margin:0;padding:0;} 
+    background-image:url('/images/hd_bg.png');
+    background-repeat:repeat-x;
+    padding-top: 50px;
+}
+
+#masthead {
+    position: relative;
+    top: -45px;
+}
+
+#sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 h1 {
     font-size: 2em;
 }
 
-#doc {
-    border: 4px solid #ddd;
+#doc4 {
+    position: relative;
 }
 
 #hd {
-    margin: 10px 0 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 3px solid #ccffcc;
 }
 
 #bd {
-    padding: 30px 10px 30px 10px;
+    margin: 20px 0 0 0;
     font-size: 1.2em;
 }
 

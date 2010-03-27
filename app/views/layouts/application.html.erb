@@ -7,20 +7,24 @@
    <%= stylesheet_link_tag 'application' %>
 </head>
 <body>
-<div id="doc" class="yui-t7">
+    <img id="masthead" src="/images/masthead.png" alt="Facebook Masthead">
+<div id="doc4" class="yui-t7">
    <div id="hd" role="banner">
     <img src="/images/logo.jpg" alt="TAPCulture! logo">
    </div>
    <div id="bd" role="main">
-	<div class="yui-g">
+       <div class="yui-ge"> 
+            <div class="yui-u first"> 
+                <p style="color: green"><%= flash[:notice] %></p>
+                <%= yield %>
+            </div> 
+            <div class="yui-u"> 
+                <img id="sidebar" src="/images/sidebar.png" alt="Facebook sidebar">
+            </div> 
+        </div>
 
-    <p style="color: green"><%= flash[:notice] %></p>
-    <%= yield %>
-        
 	</div>
-
-	</div>
-   <div id="ft" role="contentinfo"><p>Copyright 2010</p></div>
+   <div id="ft" role="contentinfo"><p></p></div>
 </div>
 </body>
 </html>
