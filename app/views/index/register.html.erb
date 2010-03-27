@@ -1,5 +1,25 @@
-<div class="content">
-    <a href="/student">
-        <img src="/images/register.png" />
-    </a>
+<script type="text/javascript">
+<!--
+$(document).ready( function() {
+	$('#invite_code').focus();
+	$('#invite_code').click( function() {
+		$(this).val('');
+	})
+	$('#invite_code').keyup( function() {
+	   	var length = $('#invite_code').val().length;
+		if (length == 7) {
+			$('#invite_ok').focus();
+		}
+	});
+})
+-->
+</script>
+<div class="content invite">
+    
+	<p>Enter your invitation code:</p>
+	<form action="/student" method="get">
+		<input type="text" id="invite_code" value="" size="7" maxlength="7" />
+		<input type="submit" value="OK!" id="invite_ok" class="button" />
+	</form>
+	
 </div>

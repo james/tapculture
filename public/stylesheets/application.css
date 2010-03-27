@@ -41,3 +41,44 @@ h1 {
 .content img {
     width: 800px;
 }
+.content.invite {
+	font-size: 22px;
+	margin-top: 120px;
+	text-align: center;
+}
+.content.invite p {
+	margin-bottom: 15px;
+}
+.content.invite input {
+	padding: 10px 15px;
+	font-weight: bold;
+	letter-spacing: 4px;
+}
+.button {
+	background: #333;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border: none;
+	color: #fff;
+	font-weight: normal;
+	padding: 10px;
+	cursor: pointer;
+	letter-spacing: normal;
+}
+.button:hover {
+	background: #555;
+}
+
+#places {
+	width: 90%;
+}
+#places li {
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+#places li a {
+	color: #0072bc;
+	font-weight: bold;
+}
