@@ -1,0 +1,22 @@
+defaults : &defaults
+  adapter: mysql
+  encoding: utf8
+  username: root
+  password:
+
+development:
+  <<: *defaults
+  database: tapculture_development
+
+test: &TEST
+  <<: *defaults
+  database: tapculture_test
+
+production:
+  <<: *defaults
+  database: tapculture_production
+
+
+
+cucumber:
+  <<: *TEST
