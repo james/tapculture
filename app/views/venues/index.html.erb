@@ -1,5 +1,22 @@
-<ul>
-  <% @venues.each do |venue| %>
-    <li><%= venue.name %></li>
-  <% end %>
-</ul>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready( function() {
+		initialize('<%= params[:location] %>');
+		<% @venues.each do |venue| %>
+			makeMarker({
+			  position: new google.maps.LatLng(<%= venue.lat %>,<%= venue.lng %>),
+			  content: "<strong><%= venue.name %></strong>",
+			  title: "<%= venue.name %>"
+			});
+		<% end %>
+	});
+</script>
+<div style="float: left; width: 50%">
+	<ul>
+	  <% @venues.each do |venue| %>
+	    <li><%= venue.name %></li>
+	  <% end %>  
+	</ul>
+</div>
+<div style="float: right; width: 50%">
+	<div id="map_canvas" style="width:350px; height:400px"></div>
+</div>
