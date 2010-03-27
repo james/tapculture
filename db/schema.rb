@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100327133039) do
+ActiveRecord::Schema.define(:version => 20100327140354) do
 
   create_table "venues", :force => true do |t|
     t.string   "name"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(:version => 20100327133039) do
     t.string   "constitution"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "lat",          :precision => 15, :scale => 10
+    t.decimal  "lng",          :precision => 15, :scale => 10
   end
 
 end
